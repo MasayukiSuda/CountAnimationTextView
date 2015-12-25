@@ -92,8 +92,9 @@ public class CountAnimationTextView extends TextView {
         mCountAnimator.start();
     }
 
-    public void setAnimationDuration(long duration) {
+    public CountAnimationTextView setAnimationDuration(long duration) {
         mCountAnimator.setDuration(duration);
+        return this;
     }
 
     // interface progress animationListener
@@ -103,15 +104,17 @@ public class CountAnimationTextView extends TextView {
         void onAnimationEnd(Object animatedValue);
     }
 
-    public void setDecimalFormat(DecimalFormat mDecimalFormat) {
+    public CountAnimationTextView setDecimalFormat(DecimalFormat mDecimalFormat) {
         this.mDecimalFormat = mDecimalFormat;
+        return this;
     }
 
     public void clearDecimalFormat() {
         this.mDecimalFormat = null;
     }
 
-    public void setCountAnimationListener(CountAnimationListener mCountAnimationListener) {
+    public CountAnimationTextView setCountAnimationListener(CountAnimationListener mCountAnimationListener) {
         this.mCountAnimationListener = mCountAnimationListener;
+        return this;
     }
 }

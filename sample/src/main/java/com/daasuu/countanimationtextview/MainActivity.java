@@ -24,7 +24,9 @@ public class MainActivity extends AppCompatActivity {
         button0.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                mCountAnimationTextView.countAnimation(0, 99999);
+                mCountAnimationTextView
+                        .setAnimationDuration(5000)
+                        .countAnimation(0, 99999);
             }
         });
 
@@ -32,7 +34,9 @@ public class MainActivity extends AppCompatActivity {
         button1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                mCountAnimationTextView.countAnimation(99999, 0);
+                mCountAnimationTextView
+                        .setAnimationDuration(5000)
+                        .countAnimation(99999, 0);
             }
         });
 
@@ -40,13 +44,13 @@ public class MainActivity extends AppCompatActivity {
         button2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                mCountAnimationTextView.setDecimalFormat(new DecimalFormat("###,###,###"));
-                mCountAnimationTextView.countAnimation(0, 9999999);
+                mCountAnimationTextView
+                        .setDecimalFormat(new DecimalFormat("###,###,###"))
+                        .setAnimationDuration(10000)
+                        .countAnimation(0, 9999999);
             }
         });
 
-
-        mCountAnimationTextView.setAnimationDuration(10000);
 
         mCountAnimationTextView.setCountAnimationListener(new CountAnimationTextView.CountAnimationListener() {
             @Override
