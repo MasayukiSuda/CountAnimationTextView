@@ -16,7 +16,7 @@ Include the CountAnimationTextView widget in your layout.
         android:text="0"
         />
 ```
-In your onCreate method (or onCreateView for a fragment), bind the widget and set default value.
+In your onCreate method (or onCreateView for a fragment), bind the widget.
 ```JAVA
     @Override
     protected void onCreate(Bundle savedInstanceState) {
