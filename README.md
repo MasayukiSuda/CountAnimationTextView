@@ -4,13 +4,49 @@
 
 A tiny Android library makes very easier count animation of TextView.
 
+<img src="art/demo.gif" width="32%">
+
+# Usage
+Include the CountAnimationTextView widget in your layout.
+```xml
+    <com.daasuu.library.CountAnimationTextView
+        android:id="@+id/count_animation_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        />
+```
+In your onCreate method (or onCreateView for a fragment), bind the widget and set default value.
+```JAVA
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+
+        mCountAnimationTextView = (CountAnimationTextView) findViewById(R.id.count_animation_textView);
+    }
+```
+Animate Count with Duration
+```JAVA
+    mCountAnimationTextView
+        .setAnimationDuration(5000)
+        .countAnimation(0, 99999);
+```
+Animate Count with DecimalFormat
+```JAVA
+    mCountAnimationTextView
+        .setDecimalFormat(new DecimalFormat("###,###,###"))
+        .setAnimationDuration(10000)
+        .countAnimation(0, 9999999);
+```
+
 # Gradle
 
 Add the dependency to your build.gradle.
 
 ```
 dependencies {
-    compile 'com.daasuu:CountAnimationTextView:0.0.1'
+    compile 'com.daasuu:CountAnimationTextView:0.0.2'
 }
 ```
 
