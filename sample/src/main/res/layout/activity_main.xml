@@ -32,7 +32,7 @@
         android:textAllCaps="false" />
 
 
-    <com.daasuu.library.CountAnimationTextView
+    <com.daasuu.cat.CountAnimationTextView
         android:id="@+id/count_animation_textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

@@ -1,4 +1,4 @@
-package com.daasuu.library;
+package com.daasuu.cat;
 
 import org.junit.Test;
 

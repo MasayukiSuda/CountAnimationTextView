@@ -1,4 +1,4 @@
-package com.daasuu.library;
+package com.daasuu.cat;
 
 import android.app.Application;
 import android.test.ApplicationTestCase;

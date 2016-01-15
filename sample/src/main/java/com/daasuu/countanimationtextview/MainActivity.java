@@ -5,7 +5,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 
-import com.daasuu.library.CountAnimationTextView;
+import com.daasuu.cat.CountAnimationTextView;
 
 import java.text.DecimalFormat;
 
