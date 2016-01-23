@@ -8,7 +8,7 @@ A tiny Android library makes very easier count animation of TextView.
 # Usage
 Include the CountAnimationTextView widget in your layout.
 ```xml
-    <com.daasuu.library.CountAnimationTextView
+    <com.daasuu.cat.CountAnimationTextView
         android:id="@+id/count_animation_textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -45,7 +45,7 @@ Add the dependency to your build.gradle.
 
 ```
 dependencies {
-    compile 'com.daasuu:CountAnimationTextView:0.0.2'
+    compile 'com.daasuu:CountAnimationTextView:0.1.0'
 }
 ```
 
