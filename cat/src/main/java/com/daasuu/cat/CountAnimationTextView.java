@@ -1,8 +1,10 @@
 package com.daasuu.cat;
 
 import android.animation.Animator;
+import android.animation.TimeInterpolator;
 import android.animation.ValueAnimator;
 import android.content.Context;
+import android.support.annotation.NonNull;
 import android.util.AttributeSet;
 import android.widget.TextView;
 
@@ -96,6 +98,12 @@ public class CountAnimationTextView extends TextView {
         mCountAnimator.setDuration(duration);
         return this;
     }
+
+    public CountAnimationTextView setInterpolator(@NonNull TimeInterpolator value) {
+        mCountAnimator.setInterpolator(value);
+        return this;
+    }
+
 
     // interface progress animationListener
     public interface CountAnimationListener {
