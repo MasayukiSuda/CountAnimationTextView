@@ -53,7 +53,7 @@ Add the dependency to your build.gradle.
 
 ```
 dependencies {
-    compile 'com.daasuu:CountAnimationTextView:0.1.1'
+    compile 'com.daasuu:CountAnimationTextView:0.1.2'
 }
 ```
 
